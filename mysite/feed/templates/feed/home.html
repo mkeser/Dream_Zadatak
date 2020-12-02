@@ -1,0 +1,11 @@
+{% extends 'feed/base.html' %}
+
+{% block content %}
+    <h1>so much better TWITTER</h1>
+    {% for tweet in tweets %}
+
+    <a href="#"> {{ tweet.name }} </a>
+    <p>{{ tweet.text }}</p>
+
+    {% endfor %}
+{% endblock content %}
